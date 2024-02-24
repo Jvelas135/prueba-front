@@ -1,5 +1,5 @@
 import React from "react";
-import template from "./MiComponente.jsx";
+import template from "./MiComponente.js";
 import { withRouter } from 'react-router-dom';
 
 class MiComponente extends React.Component {

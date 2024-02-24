@@ -1,14 +1,14 @@
 import React from "react";
-import logo2 from "../assets/images/logo2.svg";
+import logo2 from "../../assets/images/logo2.svg";
 import "./TableComponent.css";
 import { CheckCircleIcon } from '@heroicons/react/solid';
 import { ExclamationIcon } from '@heroicons/react/outline';
 import { faSignOut } from '@fortawesome/free-solid-svg-icons'
-import { Icon } from '../icon'
+import { Icon } from '../../icon'
 
 
 function TableComponent() {
-  const datosTabla = [
+  const [datosTabla, setDatosTabla] = React.useState([
     {
       fecha: "2022-03-01",
       monto: "$100.00",
@@ -47,7 +47,7 @@ function TableComponent() {
       septima: "Dato 3",
     }
     // ... Agrega más filas según sea necesario
-  ];
+  ]);
 
   return (
     <div className="table-component ">
@@ -55,7 +55,7 @@ function TableComponent() {
         <div className="logo-container">
           <img src={logo2} alt="Logo" className="logo2" />
         </div>
-        <div className="logout-container" onClick={this.login}>
+        <div className="logout-container">
           <span>Cerrar Sesión</span>
           <Icon css='icon2' icon={faSignOut} />
 

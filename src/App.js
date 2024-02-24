@@ -1,6 +1,6 @@
 import React from "react";
-import MiComponente from "./MiComponente/MiComponente";
-import TableComponent from "./TableComponent/TableComponent";
+import MiComponente from "./components/MyComponents/MiComponente.jsx";
+import TableComponent from "./components/Table/TableComponent.jsx";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {

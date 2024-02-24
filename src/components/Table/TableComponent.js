@@ -1,5 +1,5 @@
 import React    from "react";
-import template from "./TableComponent.jsx";
+import template from "./TableComponent.js";
 import { withRouter } from 'react-router-dom';
 class TableComponent extends React.Component {
   constructor(props) {
